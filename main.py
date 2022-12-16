@@ -108,22 +108,22 @@ def main():
 
     clock = pygame.time.Clock()
 
-    sun = Planet('Sun', 0, 0, 30, YELLOW, 1.98892 * 10**30)
+    sun = Planet('Солнце', 0, 0, 30, YELLOW, 1.98892 * 10**30)
     sun.sun = True
 
-    moon = Planet('Moon', -1.1 * Planet.AU, 0, 5, DARK_GREY, 7.36 * 10**22)
+    moon = Planet('Луна', -1.1 * Planet.AU, 0, 5, DARK_GREY, 7.36 * 10**22)
     moon.y_vel = 27.2 * 1000
 
-    earth = Planet('Earth', -1 * Planet.AU, 0, 15, BLUE, 5.9742 * 10**24)
+    earth = Planet('Земля', -1 * Planet.AU, 0, 15, BLUE, 5.9742 * 10**24)
     earth.y_vel = 29.783 * 1000
 
-    mars = Planet('Mars', -1.524 * Planet.AU, 0, 17, RED, 6.39 * 10**23)
+    mars = Planet('Марс', -1.524 * Planet.AU, 0, 17, RED, 6.39 * 10**23)
     mars.y_vel = 24.077 * 1000
 
-    mercury = Planet('Mercury', 0.387 * Planet.AU, 0, 8, DARK_GREY, 3.30 * 10**23)
+    mercury = Planet('Меркурий', 0.387 * Planet.AU, 0, 8, DARK_GREY, 3.30 * 10**23)
     mercury.y_vel = -47.4 * 1000
 
-    venus = Planet('Venus', 0.723 * Planet.AU, 0, 14, WHITE, 4.8685 * 10**24)
+    venus = Planet('Венера', 0.723 * Planet.AU, 0, 14, WHITE, 4.8685 * 10**24)
     venus.y_vel = -35.02 * 1000
 
     planets = [sun, moon, earth, mars, mercury, venus]
